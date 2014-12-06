@@ -1,0 +1,58 @@
+<!-- 設定網頁編碼為UTF-8 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<form name="form" method="post" action="connect.php">
+帳號：<input type="text" name="id" /> <br>
+密碼：<input type="password" name="pw" /> <br>
+<input type="submit" name="button" value="登入" />&nbsp;&nbsp;
+<a href="register.php">申請帳號</a>
+</form>
+
+
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script language="JavaScript" src="myIJob.js" type="text/javascript">
+	</script>
+	<link rel="stylesheet" type="text/css" href="ijobstyle.css" />
+	<title>
+		ijob
+	</title>
+</head>
+<body>
+<div id="header">
+	<div id="topleft">
+		<img src="logo.jpg" width=90% height=90% /></tr>
+	</div>
+	<div id="topmiddle">
+		<p id="sentence"> Where there is a will, there is a way.</p>
+	</div>
+
+	<div class="loginform" id="form">  
+		<form name="login" action="index_submit" method="get" accept-charset="utf-8">  
+		<table>
+		    <tr>  
+		        <td><label for="usermail">Email</label></td>
+		        <td><label for="password">Password</label></td>
+		    </tr>
+		    <tr>
+		        <td><input type="email" name="usermail" placeholder="yourname@email.com" required></td>  
+		        <td><input type="password" name="password" placeholder="password" required></td>  
+		        <td><input type="submit" value="Login"></td>  
+		    </tr> 
+		</table>
+		</form>  
+	</div>
+</div>
+	<div id="functiondiv">
+		<form>
+			<ul>
+			<li onclick="newAJob()">New Job</li>
+			<li onclick="myJobs()">My Jobs</li>
+			<li onclick="newAJob()">Statistics</li>
+			<li onclick="newAJob()" id="rightfun">Help</li>
+			</ul>
+		</form>
+	</div>
+</body>	
+</html>

@@ -1,0 +1,28 @@
+html {  
+    background-image: url('newjobbc.jpg');
+  	background-size: cover;  
+    background-repeat:no-repeat;
+    color: green;
+    font-family:"Monotype Corsiva";
+    font-size:30pt;
+}
+
+ul {  
+    padding: 0;  
+    margin: 20px;  
+}
+
+li {
+	list-style-type: none;
+    margin: 20px; 
+} 
+
+#submit{
+	position: relative;
+	left:150px;
+}
+#form{
+	position: fixed;
+	top:150px;
+	left:750px;
+}
