@@ -9,6 +9,7 @@ $ApplyDate = $_POST['ApplyDate'];
 $Location = $_POST['Location'];
 $JobRequirment = $_POST['JobRequirment'];
 $other = $_POST['other'];
+$status = $_POST['currentstatus'];
 
 //判斷帳號密碼是否為空值
 //確認密碼輸入的正確性
@@ -16,16 +17,16 @@ if($userid != null )
 {
 
         //新增資料進資料庫語法
-        $sql = "insert into MemberJobs_Table(User_Id,CompanyName, JobTitle, ApplyLink, ApplyDate, Location,JobRequirment,Others) values ('$userid','$CompanyName', '$JobTitle', '$ApplyLink', '$ApplyDate','$Location', '$JobRequirment', '$other')";
+        $sql = "insert into MemberJobs_Table(User_Id,CompanyName, JobTitle, ApplyLink, ApplyDate, Location,JobRequirment,Others,CurrentStatus,Refer) values ('$userid','$CompanyName', '$JobTitle', '$ApplyLink', '$ApplyDate','$Location', '$JobRequirment', '$other','$status','0')";
         if(mysql_query($sql))
         {
                 echo 'Successful!';
-                echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+                //echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
         }
         else
         {
                 echo 'Sorry,try again first!';
-                echo '<meta http-equiv=REFRESH CONTENT=2;url=createjob.php>';
+                //echo '<meta http-equiv=REFRESH CONTENT=2;url=createjob.php>';
         }
 }
 else

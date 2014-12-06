@@ -70,6 +70,13 @@
 			</select><br />			
 		<li>JobRequirment:<input type="text" name="JobRequirment" /> </li>
 		<li>Others:<textarea name="other" cols="45" rows="5"></textarea> </li>
+		<li>Current Status:
+			<select name="currentstatus">
+				<option value="Offer">Offer</option>
+				<option value="Reject">Reject</option>
+				<option value="Pending">Pending</option>
+			</select>
+		</li>
 		<input type="submit" name="button" value="submit" />
 		</form>
     </section>
