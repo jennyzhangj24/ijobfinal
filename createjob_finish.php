@@ -21,12 +21,12 @@ if($userid != null )
         if(mysql_query($sql))
         {
                 echo 'Successful!';
-                //echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+                echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
         }
         else
         {
                 echo 'Sorry,try again first!';
-                //echo '<meta http-equiv=REFRESH CONTENT=2;url=createjob.php>';
+                echo '<meta http-equiv=REFRESH CONTENT=2;url=createjob.php>';
         }
 }
 else

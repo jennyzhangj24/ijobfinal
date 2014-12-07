@@ -29,18 +29,18 @@ if($id != null && $pw != null && $pw2 != null && $pw == $pw2)
         if(mysql_query($sql))
         {
                 echo 'Successful!';
-                //echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+                echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
         }
         else
         {
                 echo 'Sorry,try again first!';
-                //echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+                echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
         }
 }
 else
 {
         echo 'Sorry,try again second!';
-       // echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
 }
 ?>
 </body>

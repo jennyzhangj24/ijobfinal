@@ -11,9 +11,9 @@
 </head>
 <body>
 <ul>
-<li onclick="newAJob()">ByLocation</li>
-<li onclick="newAJob()">ByPostion</li>
-<li onclick="newAJob()">BySkill</li>
-</ul>
+	<li><a href="ByLocation.php">ByLocation</a></li>
+	<li><a href="ByPostion.php">ByPostion</a></li>
+	<li><a href="BySkill.php">BySkill</a></li>
+</ul> 
 </body>
 </html>
