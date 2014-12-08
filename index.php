@@ -15,7 +15,7 @@
 		<img src="logo.jpg" width=90% height=90% /></tr>
 	</div>
 	<div id="topmiddle">
-		<p id="sentence"> Where there is a will, there is a way.</p>
+		<p id="sentence"> Where there is a will, there is a way. Helloworld</p>
 	</div>
 
 	<div class="loginform" id="form">  
