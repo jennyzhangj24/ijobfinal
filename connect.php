@@ -16,6 +16,7 @@ include("mysql_connect.inc.php");
 $id = $_POST['id'];
 $pw = $_POST['pw'];
 
+
 //搜尋資料庫資料
 $sql = "SELECT * FROM member_table where username = '$id'";
 $result = mysql_query($sql);
@@ -33,7 +34,7 @@ if($id != null && $pw != null && $row[1] == $id && $row[2] == $pw)
 }
 else
 {
-        echo 'Sorry,try again!';
+        echo 'Sorry,please try again!';
         echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 }
 ?>
